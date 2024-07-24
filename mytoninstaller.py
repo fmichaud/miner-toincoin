@@ -582,21 +582,23 @@ def EnableLiteServer():
 #end define
 
 def StartValidator():
+	pass
 	# restart validator
-	local.add_log("Start/restart validator service", "debug")
-	args = ["systemctl", "restart", "validator"]
-	subprocess.run(args)
+	#local.add_log("Start/restart validator service", "debug")
+	#args = ["systemctl", "restart", "validator"]
+	#subprocess.run(args)
 
 	# sleep 10 sec
-	local.add_log("sleep 10 sec", "debug")
-	time.sleep(10)
+	#local.add_log("sleep 10 sec", "debug")
+	#time.sleep(10)
 #end define
 
 def StartMytoncore():
+	pass
 	# restart mytoncore
-	local.add_log("Start/restart mytoncore service", "debug")
-	args = ["systemctl", "restart", "mytoncore"]
-	subprocess.run(args)
+	#local.add_log("Start/restart mytoncore service", "debug")
+	#args = ["systemctl", "restart", "mytoncore"]
+	#subprocess.run(args)
 #end define
 
 def GetConfig(**kwargs):
@@ -969,8 +971,8 @@ def EnableDhtServer():
 	subprocess.run(args)
 
 	# start DHT-Server
-	args = ["systemctl", "restart", "dht-server"]
-	subprocess.run(args)
+	#args = ["systemctl", "restart", "dht-server"]
+	#subprocess.run(args)
 #end define
 
 def SetWebPassword(args):
